@@ -1,0 +1,34 @@
+[
+  {
+    "id": "case-001",
+    "input": "Which customers have the highest outstanding amounts?",
+    "expected": {
+      "requirements": [
+        "Identify customers with the highest outstanding amounts",
+        "Do not invent customer data",
+        "Answer directly"
+      ]
+    }
+  },
+  {
+    "id": "case-002",
+    "input": "Show me customers whose outstanding amount is above 100000.",
+    "expected": {
+      "requirements": [
+        "Identify customers above the requested threshold",
+        "Do not include unsupported customers",
+        "Clearly answer the user's request"
+      ]
+    }
+  },
+  {
+    "id": "case-003",
+    "input": "What is the total outstanding amount?",
+    "expected": {
+      "requirements": [
+        "Provide the total outstanding amount if the information is available",
+        "Do not fabricate a value"
+      ]
+    }
+  }
+]

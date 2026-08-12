@@ -1,0 +1,34 @@
+agent:
+  name: customer-analytics-agent
+
+  purpose: |
+    Answer user questions about customer analytics accurately.
+    Understand the user's intent, use the information available
+    in the prompt/context, and provide a concise answer.
+    Never invent information.
+
+target:
+  deployment: gpt-5.4-mini
+
+evaluator:
+  deployment: gpt-5.4
+
+optimization:
+  reflection_deployment: gpt-5.4
+  max_metric_calls: 100
+  max_workers: 8
+  cache_evaluation: true
+  candidate_selection_strategy: pareto
+
+evaluation:
+  weights:
+    correctness: 0.35
+    response_format: 0.15
+    hallucination: 0.30
+    task_completion: 0.20
+
+dataset:
+  path: dataset.json
+
+prompt:
+  path: prompt.txt
