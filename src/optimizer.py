@@ -9,7 +9,7 @@ from gepa.optimize_anything import (
 
 from .evaluator import Evaluator
 from .executor import Executor
-
+from .reflection import AzureReflectionLM
 
 class PromptOptimizer:
     def __init__(
@@ -106,6 +106,12 @@ Do not solve individual examples by adding hardcoded answers.
 The prompt should generalize to unseen inputs.
 """
 
+        reflection_lm = AzureReflectionLM(
+            deployment=self.config.optimization[
+                "reflection_deployment"
+            ]
+        )
+
         result = optimize_anything(
             seed_candidate=initial_prompt,
             evaluator=self.evaluate,
@@ -125,7 +131,7 @@ The prompt should generalize to unseen inputs.
                     display_progress_bar=True,
                 ),
                 reflection=ReflectionConfig(
-                    reflection_lm=(self.config.optimization["reflection_deployment"]),
+                    reflection_lm=reflection_lm,
                 ),
             ),
         )

@@ -118,6 +118,8 @@ class Evaluator:
             "assistant_response": response,
         }
 
+        print("[EVAL] Starting", flush=True)
+
         response = self.client.responses.create(
             model=self.model,
             instructions=EVALUATOR_INSTRUCTIONS,
@@ -127,6 +129,8 @@ class Evaluator:
                 ensure_ascii=False,
             ),
         )
+
+        print("[EVAL] Completed", flush=True)
 
         evaluation = json.loads(response.output_text)
 

@@ -2,10 +2,12 @@ agent:
   name: customer-analytics-agent
 
   purpose: |
-    Answer user questions about customer analytics accurately.
-    Understand the user's intent, use the information available
-    in the prompt/context, and provide a concise answer.
-    Never invent information.
+    Convert unstructured WhatsApp conversations containing updates 
+    about one or more projects into accurate, complete, and traceable 
+    structured project-progress records suitable for a spreadsheet. 
+    The output must capture relevant project status, activities, blockers, 
+    dependencies, delays, risks, milestones, and next actions 
+    without introducing information not supported by the messages.
 
 target:
   deployment: gpt-5.4-mini
