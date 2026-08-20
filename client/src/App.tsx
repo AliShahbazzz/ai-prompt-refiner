@@ -25,6 +25,21 @@ function CopyButton({ value }: CopyButtonProps) {
   );
 }
 
+interface OptimizeDatasetItem {
+  id: string;
+  input: string;
+  expected: {
+    requirements: string[];
+  };
+}
+
+interface OptimizeRequest {
+  purpose: string;
+  initial_prompt: string;
+  dataset: OptimizeDatasetItem[];
+  target: string;
+}
+
 interface FieldProps {
   label: string;
   description?: string;
@@ -57,13 +72,101 @@ export default function App() {
     "You are an expert customer support triage assistant.\n\nRead the ticket below and classify it into exactly one category: billing, technical, account, or general.\n\nRules:\n- billing: payments, charges, invoices, refunds\n- technical: bugs, crashes, errors, performance\n- account: login, password, profile, access\n- general: anything that doesn't clearly fit the above\n\nRespond with only the category name in lowercase.\n\nTicket: {{input}}",
   );
   const [target, setTarget] = useState("gpt-5.4-mini");
-  const [logs] = useState(DUMMY_LOGS);
+  const [logs, setLogs] = useState(DUMMY_LOGS);
+  const [isOptimizing, setIsOptimizing] = useState(false);
 
   const canOptimize =
     purpose.trim() !== "" &&
     initialPrompt.trim() !== "" &&
     dataset.trim() !== "" &&
     target.trim() !== "";
+
+  const appendLog = (line: string) => {
+    const timestamp = new Date().toLocaleTimeString();
+    setLogs((prev) => `${prev}\n[${timestamp}] ${line}`);
+  };
+
+  const handleOptimize = async () => {
+    let parsedDataset: OptimizeDatasetItem[];
+    try {
+      parsedDataset = JSON.parse(dataset);
+    } catch (err) {
+      appendLog(`Failed to parse dataset JSON: ${(err as Error).message}`);
+      return;
+    }
+
+    const payload: OptimizeRequest = {
+      purpose,
+      initial_prompt: initialPrompt,
+      dataset: parsedDataset,
+      target,
+    };
+
+    setIsOptimizing(true);
+    setLogs("");
+    setOptimisedPrompt("");
+    appendLog("Connecting to optimisation stream...");
+
+    try {
+      const response = await fetch("http://localhost:8000/optimize", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "text/event-stream",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok || !response.body) {
+        throw new Error(`Request failed with status ${response.status}`);
+      }
+
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const events = buffer.split("\n\n");
+        buffer = events.pop() ?? "";
+
+        for (const rawEvent of events) {
+          const dataLines = rawEvent
+            .split("\n")
+            .filter((line) => line.startsWith("data:"))
+            .map((line) => line.slice(5).trim());
+
+          if (dataLines.length === 0) continue;
+          const data = dataLines.join("\n");
+          if (data === "[DONE]") continue;
+
+          try {
+            const parsed = JSON.parse(data);
+            if (typeof parsed?.optimized_prompt === "string") {
+              setOptimisedPrompt((prev) => prev + parsed.optimized_prompt);
+            } else if (typeof parsed?.log === "string") {
+              appendLog(parsed.log);
+            } else if (typeof parsed?.message === "string") {
+              appendLog(parsed.message);
+            } else {
+              appendLog(data);
+            }
+          } catch {
+            appendLog(data);
+          }
+        }
+      }
+
+      appendLog("Optimisation complete.");
+    } catch (err) {
+      appendLog(`Optimisation failed: ${(err as Error).message}`);
+    } finally {
+      setIsOptimizing(false);
+    }
+  };
 
   return (
     <div className="page">
@@ -120,8 +223,13 @@ export default function App() {
             />
           </Field>
 
-          <button type="button" className="optimize-btn" disabled={!canOptimize}>
-            Optimize
+          <button
+            type="button"
+            className="optimize-btn"
+            disabled={!canOptimize || isOptimizing}
+            onClick={handleOptimize}
+          >
+            {isOptimizing ? "Optimizing..." : "Optimize"}
           </button>
         </div>
 

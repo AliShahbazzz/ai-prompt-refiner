@@ -46,17 +46,19 @@ class PromptOptimizer:
         initial_prompt: str,
         trainset: list[dict],
         valset: list[dict],
+        target: str,
+        purpose: str
     ):
         objective = f"""
 Optimize the system prompt for the following AI agent.
 
 Agent purpose:
 
-{self.config.agent["purpose"]}
+{purpose or self.config.agent["purpose"]}
 
 Target model:
 
-{self.config.target["deployment"]}
+{target or self.config.target["deployment"]}
 
 The optimized prompt should maximize:
 

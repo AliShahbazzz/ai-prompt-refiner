@@ -6,13 +6,27 @@ from .evaluator import Evaluator
 from .executor import Executor
 from .optimizer import PromptOptimizer
 
+config = Config()
 
-def main():
-    config = Config()
+ROOT = Path(__file__).resolve().parent.parent
 
-    prompt = config.load_prompt()
 
-    dataset = config.load_dataset()
+def run_optimization(target: str):
+
+    prompt_path = ROOT / "prompt.txt"
+    purpose_path = ROOT / "purpose.txt"
+    dataset_path = ROOT / "dataset.json"
+
+    initial_prompt = prompt_path.read_text(encoding="utf-8")
+
+    purpose = purpose_path.read_text(encoding="utf-8")
+
+    with open(dataset_path, encoding="utf-8") as f:
+        dataset = json.load(f)
+
+    print(f"Target model: {target}")
+    print(f"Dataset size: {len(dataset)}")
+    print("Starting optimization...")
 
     if len(dataset) < 2:
         raise ValueError("Dataset must contain at least 2 examples.")
@@ -36,9 +50,7 @@ def main():
     print(f"Validation     : {len(valset)}")
     print()
 
-    executor = Executor(
-        deployment=config.target["deployment"]
-    )
+    executor = Executor(deployment=target or config.target["deployment"])
     evaluator = Evaluator(
         model=config.evaluator["deployment"],
         weights=config.evaluation["weights"],
@@ -54,7 +66,9 @@ def main():
     print()
 
     result = optimizer.optimize(
-        initial_prompt=prompt,
+        initial_prompt=initial_prompt,
+        target=target,
+        purpose=purpose,
         trainset=trainset,
         valset=valset,
     )
@@ -111,4 +125,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    run_optimization(
+        target=config.target["deployment"],
+    )

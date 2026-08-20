@@ -2,11 +2,14 @@ agent:
   name: customer-analytics-agent
 
   purpose: |
-    Convert unstructured WhatsApp conversations containing updates 
-    about one or more projects into accurate, complete, and traceable 
-    structured project-progress records suitable for a spreadsheet. 
-    The output must capture relevant project status, activities, blockers, 
-    dependencies, delays, risks, milestones, and next actions 
+    Convert unstructured WhatsApp conversations 
+    containing dispatch and delivery updates into accurate, 
+    complete, and traceable structured dispatch records 
+    suitable for a spreadsheet. The output must 
+    capture relevant vehicle details, sender and driver 
+    information, dispatch type, shipment details, quantities, 
+    destinations, delivery dates, billing details, 
+    delays, blockers, dependencies, and other relevant dispatch status 
     without introducing information not supported by the messages.
 
 target:

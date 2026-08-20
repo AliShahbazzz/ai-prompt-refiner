@@ -3,3 +3,5 @@ openai
 python-dotenv
 pyyaml
 pydantic
+fastapi
+uvicorn

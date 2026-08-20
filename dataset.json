@@ -1,22 +1,390 @@
 [
-  {
-    "id": "case-001",
-    "input": "##Plan for 11th August 2026:\n\n- *JJM Thrikkalangode Project*:\n    - PO - 174: DI Pipes, awaiting inspection call letter from vendor\n    - Indent No. 55: DI Specials, Quotation follow-up\n\n- *JJM Thrikkalangode - WTP Project*:\n    - Indent No - 13:\n        - IR Sheet & Nut & Bolts: awaiting PO finalisation\n    - Indent No - 14:\n        - CI Manhole Cover & Vent Cowl: Comparison done, waiting for vendor finalisation\n    - PO - 173: DI Pipes, awaiting inspection call letter from vendor\n    -  Kejriwal Casting PDC Cheque Courier details Follow-Up.",
-    "expected": {
-      "columns": {
-        "group_name": "Purchase HO team",
-        "sender": "bharath kumar",
-        "phone_number": "918367551177",
-        "timestamp": "2026-08-11 6:07:48",
-        "project_name": "JJM Thrikkalangode Project",
-        "report_type": "Plan",
-        "report_date": "11 August 2026",
-        "department": "",
-        "work_summary": "DI Specials, Quotation follow-up",
-        "status": "In Progress",
-        "_sender_phone": "911231231231",
-        "_wa_groupid": "913213213211-1556082627\\@g.us"
-      }
+    {
+        "id": "case-001",
+        "input": "{\"timetoken\":17869625063960000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Pls add\\n\\n\\nGalaxy Jumbo Rozana 10 kg  25 bag @ 7500/\\n\\nGalaxy Jumbo Mogra 10 kg 50 bag @ 5400/\\n\\nGalaxy Jumbo Dubar 10 kg 25 bag @ 6000/\\n\\nGalaxy Jumbo Tibar 10 kg 25 bag @ 6800/\\n\\nGalaxy Mini Mogra Golden 30 kg 75 bag @ 2900/\\n\\nGalaxy Jumbo Steam 5 kg 20 box @ 11400/\"}"
+    },
+    {
+        "id": "case-002",
+        "input": "{\"timetoken\":17869625072380000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Kailasj\"}"
+    },
+    {
+        "id": "case-003",
+        "input": "{\"timetoken\":17869625075080000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Naveen Trading Co \\n\\nSikar \\n\\nGalaxy Golden 10 kg 500 bag @ 10600/\"}"
+    },
+    {
+        "id": "case-004",
+        "input": "{\"timetoken\":17869625172400000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Manak Chand Parkash Chand Kishangarh \\n\\nGalaxy Golden 10 kg 500 bag @ 10600/\"}"
+    },
+    {
+        "id": "case-005",
+        "input": "{\"timetoken\":17869625203650000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Kailash\"}"
+    },
+    {
+        "id": "case-006",
+        "input": "{\"timetoken\":17869636265110000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"1 trk m mongra ton 40/41 @2735\"}"
+    },
+    {
+        "id": "case-007",
+        "input": "{\"timetoken\":17869636270050000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Anil\"}"
+    },
+    {
+        "id": "case-008",
+        "input": "{\"timetoken\":17869684255160000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"agra\\nMedia_Content:\\n\"}"
+    },
+    {
+        "id": "case-009",
+        "input": "{\"timetoken\":17869684285370000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Ravi\"}"
+    },
+    {
+        "id": "case-010",
+        "input": "{\"timetoken\":17869699432750000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"26.4593272, 80.3492538\"}"
+    },
+    {
+        "id": "case-011",
+        "input": "{\"timetoken\":17869722491490000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"2204 bag golden Sella 2nd wand 6250\\n50kg plain pp\\nCd 1%\\n300gn dane\\nPlz confirm\"}"
+    },
+    {
+        "id": "case-012",
+        "input": "{\"timetoken\":17869722521000000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Pawan Jhamb\"}"
+    },
+    {
+        "id": "case-013",
+        "input": "{\"timetoken\":17869727350230000,\"channelName\":\"Ankur Roy broker bihar\",\"user\":{\"phone\":\"919278000423\",\"name\":\"~LB Roy\"},\"channelId\":\"589a044e-3555-4d23-94a9-3e2d9ee7d317\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Shri maa Sharda bhandar Ghaya\\n10 mt. 1121golden sela 30kg. 102/\\n5mt. 1121 golden sela 10kg. 102/\\n5mt.supreme xxxl steam 30kg 102/\\n5mt.Andaj XXXL Steam30kg 9250/\\n5 Mt.sela tibar 30kg 53/\\n1 Mt.Andaj XXXL 1kg packing\"}"
+    },
+    {
+        "id": "case-014",
+        "input": "{\"timetoken\":17869732779430000,\"channelName\":\"Ankur Roy broker bihar\",\"user\":{\"phone\":\"918621000091\",\"name\":\"Arpit Goel\"},\"channelId\":\"589a044e-3555-4d23-94a9-3e2d9ee7d317\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"1 mt andaz 1 kg 100/- tax paid\"}"
+    },
+    {
+        "id": "case-015",
+        "input": "{\"timetoken\":17869732824090000,\"channelName\":\"Ankur Roy broker bihar\",\"user\":{\"phone\":\"918621000091\",\"name\":\"Arpit Goel\"},\"channelId\":\"589a044e-3555-4d23-94a9-3e2d9ee7d317\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Rest ok\"}"
+    },
+    {
+        "id": "case-016",
+        "input": "{\"timetoken\":17869769994530000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"45Ton 1121 G/S 9711/-\\nCD 2\\nBro 50\\nDaane 300G\\nUrmila Sortex FOR\"}"
+    },
+    {
+        "id": "case-017",
+        "input": "{\"timetoken\":17869770006190000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Sushil broker\"}"
+    },
+    {
+        "id": "case-018",
+        "input": "{\"timetoken\":17869775759650000,\"channelName\":\"Galaxy Vipin Sales\",\"user\":{\"phone\":\"917027720091\",\"name\":\"Vipin Bhandula\"},\"channelId\":\"f7edb4a7-332e-4c52-a501-2b784050e3a6\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Krishna.Trading.Co.\\nPanipat.\\n17.08.2026.\\nG.Golden.1121.Sella.30.kg.150.bag.106.\"}"
+    },
+    {
+        "id": "case-019",
+        "input": "{\"timetoken\":17869785970630000,\"channelName\":\"Sales Ashok Bro Ghaziabad\",\"user\":{\"phone\":\"919313421235\",\"name\":\"Navneet Jhamb\"},\"channelId\":\"86f5869f-8ec0-480d-885f-4bc9a4376fb7\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"1200bag 301 sizer golden 8600\\nD s interprises lukhnow\"}"
+    },
+    {
+        "id": "case-020",
+        "input": "{\"timetoken\":17869786051070000,\"channelName\":\"Sales Ashok Bro Ghaziabad\",\"user\":{\"phone\":\"918814040091\",\"name\":\"Ankul\"},\"channelId\":\"86f5869f-8ec0-480d-885f-4bc9a4376fb7\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"89\"}"
+    },
+    {
+        "id": "case-021",
+        "input": "{\"timetoken\":17869796312210000,\"channelName\":\"Sales Ashok Bro Ghaziabad\",\"user\":{\"phone\":\"919313421235\",\"name\":\"Navneet Jhamb\"},\"channelId\":\"86f5869f-8ec0-480d-885f-4bc9a4376fb7\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"1200bag 301 sizer golden 8800\\nD s interprises lukhnow\"}"
+    },
+    {
+        "id": "case-022",
+        "input": "{\"timetoken\":17869828582750000,\"channelName\":\"Galaxy Vipin Sales\",\"user\":{\"phone\":\"917027720091\",\"name\":\"Vipin Bhandula\"},\"channelId\":\"f7edb4a7-332e-4c52-a501-2b784050e3a6\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Tuesday.18.08.2026..Nuh.Tauru\\nGurgaon\"}"
+    },
+    {
+        "id": "case-023",
+        "input": "{\"timetoken\":17870247934240000,\"channelName\":\"Galaxy Vipin Sales\",\"user\":{\"phone\":\"917027720091\",\"name\":\"Vipin Bhandula\"},\"channelId\":\"f7edb4a7-332e-4c52-a501-2b784050e3a6\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"HR45E2990.  9813028407.  36tan. 75 rs Tavru\"}"
+    },
+    {
+        "id": "case-024",
+        "input": "{\"timetoken\":17870263872000000,\"channelName\":\"Galaxy Vipin Sales\",\"user\":{\"phone\":\"917027720091\",\"name\":\"Vipin Bhandula\"},\"channelId\":\"f7edb4a7-332e-4c52-a501-2b784050e3a6\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Vijay.Trading.Co\\nTauru.\\n18.08.2026.\\nG.Golden.1121.Sella.30.kg.1200.bag.106.\"}"
+    },
+    {
+        "id": "case-025",
+        "input": "{\"timetoken\":17870268961610000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Dear sir soda confirm 1509 golden for ladwa  lot 1018 katta rate 9100  bardana free  cd 2 Dalai 30 sold party  goel international tarowari purchase byer  knam industries  pvt Ltd  ladwa\"}"
+    },
+    {
+        "id": "case-026",
+        "input": "{\"timetoken\":17870268964620000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Rajesh Kaithal\"}"
+    },
+    {
+        "id": "case-027",
+        "input": "{\"timetoken\":17870268967970000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Billing from galaxy Agero pvt sa hogi\"}"
+    },
+    {
+        "id": "case-028",
+        "input": "{\"timetoken\":17870269648380000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Confirmation 17-08-26\\n\\nSupplier- *Galaxy Food Industries*(Taraori)\\n\\nBuyer - *AJAY TRADERS* (Rajkot)\\nMob:- 9375799099\\n\\nTotal Qtl:  18 MT\\n\\n11 Ton \\nPR steam wand @ 4950/-\\nBrand: Galaxy Pasand \\n\\n03 Ton \\n1509 Steam Wand @ 9200/-\\n(100 bags * 30kg)\\nBrand: Andaz steam\\n\\n1.4 Ton \\n1121 steam wand @ 107/-\\n(33 Bags * 30kg)\\n5kg 20 carton packing @ 112/-\\nBrand: Galaxy Jumbo\\n\\n1.2 MT\\nTraditional Raw @ 100/-\\n(33 Bags * 30kg)\\n5kg 10 carton packing @ 105/-\\nBrand: Premium\\n\\n01 Ton\\nClassic Raw Wand @ 112/-\\n(33 Bags * 30kg)\\nBrand: Raw Classic\\n\\n400 kg\\n1401 Steam Wand\\n1kg 10 carton packing @ 107/-\\n5kg 10 carton packing @ 107/-\\nBrand: Galaxy Gulab\\n\\n*CD 2%*\\n*Payment will be Given after 12 days After Invoice Generated.*\\n*No Weevils*\\n*Ex mill Rate*\"}"
+    },
+    {
+        "id": "case-029",
+        "input": "{\"timetoken\":17870269908020000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"1200bag 301 sizer golden 8800\\nD s interprises lukhnow\"}"
+    },
+    {
+        "id": "case-030",
+        "input": "{\"timetoken\":17870269937010000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Ashok\"}"
+    },
+    {
+        "id": "case-031",
+        "input": "{\"timetoken\":17870270308570000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Krishna.Trading.Co.\\nPanipat.\\n17.08.2026.\\nG.Golden.1121.Sella.30.kg.150.bag.106.\"}"
+    },
+    {
+        "id": "case-032",
+        "input": "{\"timetoken\":17870270311460000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Vijay.Trading.Co\\nTauru.\\n18.08.2026.\\nG.Golden.1121.Sella.30.kg.1200.bag.106.\"}"
+    },
+    {
+        "id": "case-033",
+        "input": "{\"timetoken\":17870311774440000,\"channelName\":\"Galaxy Jai Parkash Jodhpur Group \",\"user\":{\"phone\":\"919887502904\",\"name\":\"....\"},\"channelId\":\"76f1c48a-ba51-4432-b7b9-966d7ea363ac\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"17/08/26\\nBat balotra \\nTotal call 20\\nPC-5\\nSales \\n\\nMahalaxmi sales \\nGalaxy almalika-11\\n\\nNursing journal store \\nGalaxy almalika-11\\n\\nMahaveer traders \\nGalaxy pr stem -11\\n\\nMansarover k.s\\nGalaxy gulab kinki-2\\nGalaxy pr stem-1\\nGalaxy almalika-2\\n\\nMurli trading \\nGalaxy almalika-7\\n\\n\\nTotal -45 bag\"}"
+    },
+    {
+        "id": "case-034",
+        "input": "{\"timetoken\":17870312927910000,\"channelName\":\"Galaxy Jai Parkash Jodhpur Group \",\"user\":{\"phone\":\"919887502904\",\"name\":\"....\"},\"channelId\":\"76f1c48a-ba51-4432-b7b9-966d7ea363ac\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Date.  18/08/26\\nName  : jai prakash \\nPost:     ASO\\nHQ. :   Jodhpur \\nMarket . Sumerpur\"}"
+    },
+    {
+        "id": "case-035",
+        "input": "{\"timetoken\":17870319601470000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"26.8140883, 80.9024522\"}"
+    },
+    {
+        "id": "case-036",
+        "input": "{\"timetoken\":17870319657020000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Lucknow\"}"
+    },
+    {
+        "id": "case-037",
+        "input": "{\"timetoken\":17870321779830000,\"channelName\":\"Galaxy Vipin Sales\",\"user\":{\"phone\":\"917027720091\",\"name\":\"Vipin Bhandula\"},\"channelId\":\"f7edb4a7-332e-4c52-a501-2b784050e3a6\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Hari.Om.Traders\\nNuh.\\n18.08.2026.\\nG.Golden.1121.Sella.30.kg.400.bag.106\"}"
+    },
+    {
+        "id": "case-038",
+        "input": "{\"timetoken\":17870323185190000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Hari.Om.Traders\\nNuh.\\n18.08.2026.\\nG.Golden.1121.Sella.30.kg.400.bag.106\"}"
+    },
+    {
+        "id": "case-039",
+        "input": "{\"timetoken\":17870337376860000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"DB LKO\\nMedia_Content:\\n\"}"
+    },
+    {
+        "id": "case-040",
+        "input": "{\"timetoken\":17870368230970000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"03 ton Galaxy Golden 30 kg --10600\\n\\nRama rice industries \\nKunjpura, Karnal\"}"
+    },
+    {
+        "id": "case-041",
+        "input": "{\"timetoken\":17870368290800000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Mukesh\"}"
+    },
+    {
+        "id": "case-042",
+        "input": "{\"timetoken\":17870373509920000,\"channelName\":\"Ankur Roy broker bihar\",\"user\":{\"phone\":\"918621000091\",\"name\":\"Arpit Goel\"},\"channelId\":\"589a044e-3555-4d23-94a9-3e2d9ee7d317\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Loading when?\"}"
+    },
+    {
+        "id": "case-043",
+        "input": "{\"timetoken\":17870400895060000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Vikash.Traders\\nChochrouli.\\n18.08.2026.\\nG.Golden.1121.Sella.30.kg.50.bag.106.\\nG.Gulab.Stem.10.kg.50.bag.103.T.P.\\nG.Gulab.Mast.Stem.10.kg.100.bag.7600.T.P.\\nG.Mongra.Golden.Sella.30.kg.300.bag.3300\"}"
+    },
+    {
+        "id": "case-044",
+        "input": "{\"timetoken\":17870406047970000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Vikash.Traders\\nChochrouli.\\n18.08.2026.\\nG.Golden.1121.Sella.30.kg.50.bag.106\\nG.Gulab.Stem.10.kg.100.bag.103.T.P\\nG.Gulab.Mast.Stem.10.kg.100.bag.7600.T.P.\\nG.Mongra.Golden.Sella.30.kg.300.bag.3300\"}"
+    },
+    {
+        "id": "case-045",
+        "input": "{\"timetoken\":17870430465270000,\"channelName\":\"Galaxy Vipin Sales\",\"user\":{\"phone\":\"917027720091\",\"name\":\"Vipin Bhandula\"},\"channelId\":\"f7edb4a7-332e-4c52-a501-2b784050e3a6\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Shree.Lal.Ji.Traders\\nYumanagar.\\n18.08.2026.\\nG.Golden.1121.Sella.30.kg.100.bag.106.\\nG.Reguler.Golden.Sella.30.kg.50.bag.6800.\\nG.Andaz.Golden.Sella.30.kg.50.bag.9600.\\nG.Gulab.Mast.Stem.10.kg.50.bag.7600.T.P.\\nG.Tibar.Golden.Sella.30.kg.100.bag.5050.\\nG.Bashwar.Kinki.Stem.30.kg.100.bag.2825.\\nG.Mongra.Golden.Sella.30.kg.\\n400.bag.3300.\"}"
+    },
+    {
+        "id": "case-046",
+        "input": "{\"timetoken\":17870433522150000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Lucknow to jagdishpur with shiv traders salesman\"}"
+    },
+    {
+        "id": "case-047",
+        "input": "{\"timetoken\":17870471846810000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"BHEL JAGDISHPUR\\nMedia_Content:\\n\"}"
+    },
+    {
+        "id": "case-048",
+        "input": "{\"timetoken\":17870477642760000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Gupta p/s\\n9889525986\\nMedia_Content:\\n\"}"
+    },
+    {
+        "id": "case-049",
+        "input": "{\"timetoken\":17870508788840000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"26.4942469, 81.5487219\"}"
+    },
+    {
+        "id": "case-050",
+        "input": "{\"timetoken\":17870509165840000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Jagdishpur BHEL\"}"
+    },
+    {
+        "id": "case-051",
+        "input": "{\"timetoken\":17870512910570000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Kumar kirana\\n8416902292\\nMedia_Content:\\n\"}"
+    },
+    {
+        "id": "case-052",
+        "input": "{\"timetoken\":17870544319450000,\"channelName\":\"Sales Adish Broker\",\"user\":{\"phone\":\"919811084786\",\"name\":\"A\"},\"channelId\":\"c0710d25-6ec1-4eee-8a29-328830886707\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Naveen ji hapur\"}"
+    },
+    {
+        "id": "case-053",
+        "input": "{\"timetoken\":17870693080910000,\"channelName\":\"Galaxy Vipin Sales\",\"user\":{\"phone\":\"917027720091\",\"name\":\"Vipin Bhandula\"},\"channelId\":\"f7edb4a7-332e-4c52-a501-2b784050e3a6\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Wednasday.19.08.2026.Pautudi\\nBhiwari..Gurgaon\"}"
+    },
+    {
+        "id": "case-054",
+        "input": "{\"timetoken\":17871085160520000,\"channelName\":\"Ankur Roy broker bihar\",\"user\":{\"phone\":\"918368942273\",\"name\":\"~Ankur Rai\"},\"channelId\":\"589a044e-3555-4d23-94a9-3e2d9ee7d317\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"@919817983706 balance dalna sir\"}"
+    },
+    {
+        "id": "case-055",
+        "input": "{\"timetoken\":17871087084550000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"26.7911888, 80.8897744\"}"
+    },
+    {
+        "id": "case-056",
+        "input": "{\"timetoken\":17871087160450000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Lucknow\"}"
+    },
+    {
+        "id": "case-057",
+        "input": "{\"timetoken\":17871171448440000,\"channelName\":\"Galaxy Jai Parkash Jodhpur Group \",\"user\":{\"phone\":\"919887502904\",\"name\":\"....\"},\"channelId\":\"76f1c48a-ba51-4432-b7b9-966d7ea363ac\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"18/08/26\\nBat Sumerpur \\nTotal call 15\\nPC-2\\nSales \\nMangalmurti \\nGalaxy andaz(g)-11\\nGalaxy almalika-11\\nGalaxy pr stem-11\\n\\nVijay store \\nGalaxy gulab tibar-10\\nGalaxy andaz(g)-5\\n\\n\\nTotal -48\"}"
+    },
+    {
+        "id": "case-058",
+        "input": "{\"timetoken\":17871171835590000,\"channelName\":\"Galaxy Jai Parkash Jodhpur Group \",\"user\":{\"phone\":\"919887502904\",\"name\":\"....\"},\"channelId\":\"76f1c48a-ba51-4432-b7b9-966d7ea363ac\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Date.  19/08/26\\nName  : jai prakash \\nPost:     ASO\\nHQ. :   Jodhpur \\nMarket . Ghantaghar\"}"
+    },
+    {
+        "id": "case-059",
+        "input": "{\"timetoken\":17871175935350000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919817983716\",\"name\":\"Shubham\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"🙏🙏🙏🙏\"}"
+    },
+    {
+        "id": "case-060",
+        "input": "{\"timetoken\":17871203174810000,\"channelName\":\"Sales Ashok Bro Ghaziabad\",\"user\":{\"phone\":\"919817983716\",\"name\":\"Shubham\"},\"channelId\":\"86f5869f-8ec0-480d-885f-4bc9a4376fb7\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"GOEL INTERNATIONAL PVT.LTD.\\nSONKRA ROAD,TARAORI-132116,\\n06AACCG7414K1ZL\\nPAN : AACCG7414K GST.NO.06AACCG7414K1ZL\\nEMAIL:-accounts@goelrice.net\\nFSSAI LICENSE NUMBER:-10813010000171\\nBILL OF SUPPLY\\nORIGINAL\\nDUPLICATE\\nTRIPLICATE\\nINVOICE No.\\nMS-2973\\nDATE\\n17/08/2026 Credit\\nBROKER\\nASHOK JI \\n(9313421235)\\nPOLICY No. 261538502800\\nZurich Kotak General \\nInsurance\\nTRANSPORT GATEPASS No.\\nGANGA TRANSPORT \\nCOMPANY\\nFROM\\nTARAORI , INDIA \\nTO\\nLUCKNOW\\nTIME\\n01:32 PM\\nM/s\\nD.S. ENTERPRISES\\n402/403 MUNICIPAL NO 289/71 KA & KHA, M A P SCHOOL \\nCROSSING, LUCKNOW, LUCKNOW, UTTAR PRADESH, \\n226004\\nLUCKNOW Uttar Pradesh\\nPIN NO :-226401\\nGSTN No. 09AAUFD1554G1Z6\\nPhone No. 9359907133,9412469786\\nVEHICLE No.\\nUP81HT-6272 Page 1 of 1 DRIVER\\nGRN No.\\n5047\\n0 9\\nGST SALE \\nWITHOUT TAX\\nSr. ITEM NAME HSN Code Bags Weight RATE AMOUNT\\nRICE 10063012\\n301 GOLDEN SIZER 30 KG\\n1 1,167 350.10 8,800.00 3,080,880.00\\nTOTAL 1,167 350.10 3,080,880.00\\nTOTAL GST 0.00\\nInsurance % 0.00 0.00\\nCommission % 0.00 0.00\\nTCS 0\\nFreight +/- 0.00\\nTOTAL BILL 3,080,880.00 in words\\nRupees Thirty Lakh Eighty Thousand Eight Hundred Eighty Only\\nfor GOEL INTERNATIONAL PVT.LTD.\\nAuthorised Signatory\\n\\\"I/We hereby certify that food/foods mentioned in this invoice is/are warranted to\\n be of the nature and quality which it/there purport to be\\\".\\nPLEASE MAKE PAYMENT THROUGH\\nPUNJAB NATIONAL BANK TARAORI\\nA\\\\C NO. 4041008700000299\\nIFSC CODE NO. PUNB0404100\"}"
+    },
+    {
+        "id": "case-061",
+        "input": "{\"timetoken\":17871204934210000,\"channelName\":\"Sales Ashok Bro Ghaziabad\",\"user\":{\"phone\":\"919817983716\",\"name\":\"Shubham\"},\"channelId\":\"86f5869f-8ec0-480d-885f-4bc9a4376fb7\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"GOEL INTERNATIONAL PVT.LTD.\\nSONKRA ROAD,TARAORI-132116,\\n06AACCG7414K1ZL\\nPAN : AACCG7414K GST.NO.06AACCG7414K1ZL\\nEMAIL:-accounts@goelrice.net\\nFSSAI LICENSE NUMBER:-10813010000171\\nBILL OF SUPPLY\\nORIGINAL\\nDUPLICATE\\nTRIPLICATE\\nINVOICE No.\\nMS-2975\\nDATE\\n17/08/2026 Credit\\nBROKER\\nASHOK JI \\n(9313421235)\\nPOLICY No. 261538502800\\nZurich Kotak General \\nInsurance\\nTRANSPORT GATEPASS No.\\nGANGA TRANSPORT \\nCOMPANY\\nFROM\\nTARAORI , INDIA \\nTO\\nGHAZIABAD\\nTIME\\n03:08 PM\\nM/s\\nAGGARWAL TRADERS\\nNAVEEN MANDI.STHAL,GOVINDPURI\\nGHAZIABAD Uttar Pradesh\\nPIN NO :-201001\\nGSTN No. 09AGEPS6392K1ZN\\nPhone No. 98732-33100\\nVEHICLE No.\\nBR44G-9657 Page 1 of 1 DRIVER\\nGRN No.\\n5466\\n0 9\\nGST SALE \\nWITHOUT TAX\\nSr. ITEM NAME HSN Code Bags Weight RATE AMOUNT\\n1 RICE 10063012 50 15.00 3,300.00 49,500.00\\n2 RICE 10063012 100 30.00 3,600.00 108,000.00\\nTOTAL 150 45.00 157,500.00\\nTOTAL GST 0.00\\nInsurance % 0.00 0.00\\nCommission % 0.00 0.00\\nTCS 0\\nFreight +/- 0.00\\nTOTAL BILL 157,500.00 in words\\nRupees One Lakh Fifty Seven Thousand Five Hundred Only\\nfor GOEL INTERNATIONAL PVT.LTD.\\nAuthorised Signatory\\n\\\"I/We hereby certify that food/foods mentioned in this invoice is/are warranted to\\n be of the nature and quality which it/there purport to be\\\".\\nPLEASE MAKE PAYMENT THROUGH\\nPUNJAB NATIONAL BANK TARAORI\\nA\\\\C NO. 4041008700000299\\nIFSC CODE NO. PUNB0404100\\nGOEL INTERNATIONAL PVT.LTD.\\nSONKRA ROAD,TARAORI-132116,\\n06AACCG7414K1ZL\\nPAN : AACCG7414K GST.NO.06AACCG7414K1ZL\\nEMAIL:-accounts@goelrice.net\\nFSSAI LICENSE NUMBER:-10813010000171\\nBILL OF SUPPLY\\nORIGINAL\\nDUPLICATE\\nTRIPLICATE\\nINVOICE No.\\nMS-2976\\nDATE\\n17/08/2026 Credit\\nBROKER\\nASHOK JI \\n(9313421235)\\nPOLICY No. 261538502800\\nZurich Kotak General \\nInsurance\\nTRANSPORT GATEPASS No.\\nGANGA TRANSPORT \\nCOMPANY\\nFROM\\nTARAORI , INDIA \\nTO\\nGHAZIABAD\\nTIME\\n03:12 PM\\nM/s\\nRAKESH KUMAR YASH KUMAR\\nC 59, KUBER NAVEEN MANDI STHAL GOVINDPURAM\\nGHAZIABAD Uttar Pradesh\\nPIN NO :-201001\\nGSTN No. 09AEOPA9635D1ZE\\nPhone No. 98110-46644\\nVEHICLE No.\\nBR44G-9657 Page 1 of 1 DRIVER\\nGRN No.\\n5467\\n0 9\\nGST SALE \\nWITHOUT TAX\\nSr. ITEM NAME HSN Code Bags Weight RATE AMOUNT\\n1 10063012 50 15.00 10,285.71 154,285.65\\n2 10063012 50 15.00 10,285.71 154,285.65\\n3 10063012 25 7.50 10,190.47 76,428.53\\n4 10063012 25 7.50 10,190.47 76,428.53\\nTOTAL 150 45.00 461,428.35\\nTOTAL GST 23,071.4\\nInsurance % 0.00 0.00\\nCommission % 0.00 0.00\\nTCS 0\\nFreight +/- 0.00\\nTOTAL BILL 484,500.00 in words\\nRupees Four Lakh Eighty Four Thousand Five Hundred Only\\nfor GOEL INTERNATIONAL PVT.LTD.\\nAuthorised Signatory\\n\\\"I/We hereby certify that food/foods mentioned in this invoice is/are warranted to\\n be of the nature and quality which it/there purport to be\\\".\\nPLEASE MAKE PAYMENT THROUGH\\nPUNJAB NATIONAL BANK TARAORI\\nA\\\\C NO. 4041008700000299\\nIFSC CODE NO. PUNB0404100\\nGOEL INTERNATIONAL PVT.LTD.\\nSONKRA ROAD,TARAORI-132116,\\n06AACCG7414K1ZL\\nPAN : AACCG7414K GST.NO.06AACCG7414K1ZL\\nEMAIL:-accounts@goelrice.net\\nFSSAI LICENSE NUMBER:-10813010000171\\nBILL OF SUPPLY\\nORIGINAL\\nDUPLICATE\\nTRIPLICATE\\nINVOICE No.\\nMS-2977\\nDATE\\n17/08/2026 Credit\\nBROKER\\nASHOK JI \\n(9313421235)\\nPOLICY No. 261538502800\\nZurich Kotak General \\nInsurance\\nTRANSPORT GATEPASS No.\\nGANGA TRANSPORT \\nCOMPANY\\nFROM\\nTARAORI , INDIA \\nTO\\nDELHI\\nTIME\\n03:17 PM\\nM/s\\nTUSHAR TRADING COMPANY-DELHI\\nGROUND FLOOR, PROP. NO-III/2252-53, HINGA BEG , \\nTILAK BAZAR, NEW DELHI, NORTH DELHI, DELHI, 110006\\nDELHI Delhi\\nPIN NO :-110006\\nGSTN No. 07AJFPG2737E1ZJ\\nPhone No. \\nVEHICLE No.\\nBR44G-9657 Page 1 of 1 DRIVER\\nGRN No.\\n5468\\n0 7\\nGST SALE \\nWITHOUT TAX\\nSr. ITEM NAME HSN Code Bags Weight RATE AMOUNT\\nRICE 10063012\\nGALAXY GOLDEN RICE 30 KG\\n1 700 210.00 10,600.00 2,226,000.00\\nTOTAL 700 210.00 2,226,000.00\\nTOTAL GST 0.00\\nInsurance % 0.00 0.00\\nCommission % 0.00 0.00\\nTCS 0\\nFreight +/- 0.00\\nTOTAL BILL 2,226,000.00 in words\\nRupees Twenty Two Lakh Twenty Six Thousand Only\\nfor GOEL INTERNATIONAL PVT.LTD.\\nAuthorised Signatory\\n\\\"I/We hereby certify that food/foods mentioned in this invoice is/are warranted to\\n be of the nature and quality which it/there purport to be\\\".\\nPLEASE MAKE PAYMENT THROUGH\\nPUNJAB NATIONAL BANK TARAORI\\nA\\\\C NO. 4041008700000299\\nIFSC CODE NO. PUNB0404100\"}"
+    },
+    {
+        "id": "case-062",
+        "input": "{\"timetoken\":17871207154970000,\"channelName\":\"Sales Ashok Bro Ghaziabad\",\"user\":{\"phone\":\"919817983716\",\"name\":\"Shubham\"},\"channelId\":\"86f5869f-8ec0-480d-885f-4bc9a4376fb7\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"GOEL INTERNATIONAL PVT.LTD.\\nSONKRA ROAD,TARAORI-132116,\\n06AACCG7414K1ZL\\nPAN : AACCG7414K GST.NO.06AACCG7414K1ZL\\nEMAIL:-accounts@goelrice.net\\nFSSAI LICENSE NUMBER:-10813010000171\\nBILL OF SUPPLY\\nORIGINAL\\nDUPLICATE\\nTRIPLICATE\\nINVOICE No.\\nMS-2997\\nDATE\\n17/08/2026 Credit\\nBROKER\\nASHOK JI \\n(9313421235)\\nPOLICY No. 261538502800\\nZurich Kotak General \\nInsurance\\nTRANSPORT GATEPASS No.\\nGANGA TRANSPORT \\nCOMPANY\\nFROM\\nTARAORI , INDIA \\nTO\\nKANPUR\\nTIME\\n06:10 PM\\nM/s\\nBHARAT TRADERS\\nNO BASTA GALLA MANDI,KANPUR\\nKANPUR Uttar Pradesh\\nPIN NO :-208001\\nGSTN No. 09AHGPG0560J1ZF\\nPhone No. 99841-22221\\nVEHICLE No.\\nUP81CT-3927 Page 1 of 1 DRIVER\\nGRN No.\\n5048\\n0 9\\nGST SALE \\nWITHOUT TAX\\nSr. ITEM NAME HSN Code Bags Weight RATE AMOUNT\\n1 RICE 10063012 400 120.00 3,600.00 432,000.00\\n2 RICE 10063012 200 60.00 5,000.00 300,000.00\\n3 RICE 10063012 50 15.00 3,400.00 51,000.00\\n4 RICE 10063012 50 15.00 3,200.00 48,000.00\\n5 RICE 10063012 50 15.00 3,500.00 52,500.00\\nTOTAL 750 225.00 883,500.00\\nTOTAL GST 0.00\\nInsurance % 0.00 0.00\\nCommission % 0.00 0.00\\nTCS 0\\nFreight +/- 0.00\\nTOTAL BILL 883,500.00 in words\\nRupees Eight Lakh Eighty Three Thousand Five Hundred Only\\nfor GOEL INTERNATIONAL PVT.LTD.\\nAuthorised Signatory\\n\\\"I/We hereby certify that food/foods mentioned in this invoice is/are warranted to\\n be of the nature and quality which it/there purport to be\\\".\\nPLEASE MAKE PAYMENT THROUGH\\nPUNJAB NATIONAL BANK TARAORI\\nA\\\\C NO. 4041008700000299\\nIFSC CODE NO. PUNB0404100\\nGOEL INTERNATIONAL PVT.LTD.\\nSONKRA ROAD,TARAORI-132116,\\n06AACCG7414K1ZL\\nPAN : AACCG7414K GST.NO.06AACCG7414K1ZL\\nEMAIL:-accounts@goelrice.net\\nFSSAI LICENSE NUMBER:-10813010000171\\nBILL OF SUPPLY\\nORIGINAL\\nDUPLICATE\\nTRIPLICATE\\nINVOICE No.\\nMS-2998\\nDATE\\n17/08/2026 Credit\\nBROKER\\nASHOK JI \\n(9313421235)\\nPOLICY No. 261538502800\\nZurich Kotak General \\nInsurance\\nTRANSPORT GATEPASS No.\\nGANGA TRANSPORT \\nCOMPANY\\nFROM\\nTARAORI , INDIA \\nTO\\nKANPUR\\nTIME\\n06:13 PM\\nM/s\\nBHARAT TRADERS\\nNO BASTA GALLA MANDI,KANPUR\\nKANPUR Uttar Pradesh\\nPIN NO :-208001\\nGSTN No. 09AHGPG0560J1ZF\\nPhone No. 99841-22221\\nVEHICLE No.\\nUP81CT-3927 Page 1 of 1 DRIVER\\nGRN No.\\n5048\\n0 9\\nGST SALE \\nWITHOUT TAX\\nSr. ITEM NAME HSN Code Bags Weight RATE AMOUNT\\nRICE 10063012\\nGULAB STEAM (20X1KG)\\n1 10 2.00 10,380.95 20,761.90\\nRICE 10063012\\nGULAB MONGRA (3X10KG)\\n2 100 30.00 5,142.85 154,285.50\\nTOTAL 110 32.00 175,047.40\\nTOTAL GST 8,752.37\\nInsurance % 0.00 0.00\\nCommission % 0.00 0.00\\nTCS 0\\nFreight +/- 0.00\\nTOTAL BILL 183,800.00 in words\\nRupees One Lakh Eighty Three Thousand Eight Hundred Only\\nfor GOEL INTERNATIONAL PVT.LTD.\\nAuthorised Signatory\\n\\\"I/We hereby certify that food/foods mentioned in this invoice is/are warranted to\\n be of the nature and quality which it/there purport to be\\\".\\nPLEASE MAKE PAYMENT THROUGH\\nPUNJAB NATIONAL BANK TARAORI\\nA\\\\C NO. 4041008700000299\\nIFSC CODE NO. PUNB0404100\\nGOEL INTERNATIONAL PVT.LTD.\\nSONKRA ROAD,TARAORI-132116,\\n06AACCG7414K1ZL\\nPAN : AACCG7414K GST.NO.06AACCG7414K1ZL\\nEMAIL:-accounts@goelrice.net\\nFSSAI LICENSE NUMBER:-10813010000171\\nBILL OF SUPPLY\\nORIGINAL\\nDUPLICATE\\nTRIPLICATE\\nINVOICE No.\\nMS-2999\\nDATE\\n17/08/2026 Credit\\nBROKER\\nASHOK JI \\n(9313421235)\\nPOLICY No. 261538502800\\nZurich Kotak General \\nInsurance\\nTRANSPORT GATEPASS No.\\nGANGA TRANSPORT \\nCOMPANY\\nFROM\\nTARAORI , INDIA \\nTO\\nKANPUR\\nTIME\\n06:16 PM\\nM/s\\nJAI SHANKAR TRADERS\\nNAV BASTA GALLA MANDI\\nKANPUR Uttar Pradesh\\nPIN NO :-208001\\nGSTN No. 09AFQPK4186E1Z2\\nPhone No. 9839141409\\nVEHICLE No.\\nUP81CT-3927 Page 1 of 1 DRIVER\\nGRN No.\\n5049\\n0 9\\nGST SALE \\nWITHOUT TAX\\nSr. ITEM NAME HSN Code Bags Weight RATE AMOUNT\\n1 RICE 10063012 200 60.00 3,600.00 216,000.00\\n2 RICE 10063012 100 30.00 5,000.00 150,000.00\\nTOTAL 300 90.00 366,000.00\\nTOTAL GST 0.00\\nInsurance % 0.00 0.00\\nCommission % 0.00 0.00\\nTCS 0\\nFreight +/- 0.00\\nTOTAL BILL 366,000.00 in words\\nRupees Three Lakh Sixty Six Thousand Only\\nfor GOEL INTERNATIONAL PVT.LTD.\\nAuthorised Signatory\\n\\\"I/We hereby certify that food/foods mentioned in this invoice is/are warranted to\\n be of the nature and quality which it/there purport to be\\\".\\nPLEASE MAKE PAYMENT THROUGH\\nPUNJAB NATIONAL BANK TARAORI\\nA\\\\C NO. 4041008700000299\\nIFSC CODE NO. PUNB0404100\"}"
+    },
+    {
+        "id": "case-063",
+        "input": "{\"timetoken\":17871210392580000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Lucknow to sutanpur  with shiv traders salesman\"}"
+    },
+    {
+        "id": "case-064",
+        "input": "{\"timetoken\":17871218784670000,\"channelName\":\"Galaxy Lakwinder Sales\",\"user\":{\"phone\":\"919817983716\",\"name\":\"Shubham\"},\"channelId\":\"c3d7505a-7d76-4669-a467-158663296ed4\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"GOEL INTERNATIONAL PVT.LTD.\\nSONKRA ROAD,TARAORI-132116,\\n06AACCG7414K1ZL\\nPAN : AACCG7414K GST.NO.06AACCG7414K1ZL\\nEMAIL:-accounts@goelrice.net\\nFSSAI LICENSE NUMBER:-10813010000171\\nBILL OF SUPPLY\\nORIGINAL\\nDUPLICATE\\nTRIPLICATE\\nINVOICE No.\\nMS-3009\\nDATE\\n18/08/2026 Credit\\nBROKER\\nLAKHWINDER JI\\nPOLICY No. 261538502800\\nZurich Kotak General \\nInsurance\\nTRANSPORT GATEPASS No.\\nMANN TRANSPORT \\nCOMPANY\\nFROM\\nTARAORI , INDIA \\nTO\\nKOLKATA\\nTIME\\n12:39 PM\\nM/s\\nVINEET ENTERPRISES\\n67/45B, STRAND ROAD, POSTA, KOLKATA, WEST BENGAL, \\n700007\\nKOLKATA West Bengal\\nPIN NO :-700016\\nGSTN No. 19AANFV6721A1Z3\\nPhone No. 98300 92177\\nVEHICLE No.\\nHR45E-0917 Page 1 of 1 DRIVER\\nGRN No.\\n5018\\n1 9\\nGST SALE \\nWITHOUT TAX\\nSr. ITEM NAME HSN Code Bags Weight RATE AMOUNT\\n1 10063012 1,000 300.00 7,000.00 2,100,000.00\\n2 10063012 400 120.00 9,900.00 1,188,000.00\\nTOTAL 1,400 420.00 3,288,000.00\\nTOTAL GST 0.00\\nInsurance % 0.00 0.00\\nCommission % 0.00 0.00\\nTCS 0\\nFreight +/- 0.00\\nTOTAL BILL 3,288,000.00 in words\\nRupees Thirty Two Lakh Eighty Eight Thousand Only\\nfor GOEL INTERNATIONAL PVT.LTD.\\nAuthorised Signatory\\n\\\"I/We hereby certify that food/foods mentioned in this invoice is/are warranted to\\n be of the nature and quality which it/there purport to be\\\".\\nPLEASE MAKE PAYMENT THROUGH\\nPUNJAB NATIONAL BANK TARAORI\\nA\\\\C NO. 4041008700000299\\nIFSC CODE NO. PUNB0404100\"}"
+    },
+    {
+        "id": "case-065",
+        "input": "{\"timetoken\":17871218833770000,\"channelName\":\"Galaxy Lakwinder Sales\",\"user\":{\"phone\":\"919817983716\",\"name\":\"Shubham\"},\"channelId\":\"c3d7505a-7d76-4669-a467-158663296ed4\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"GOEL INTERNATIONAL PVT.LTD.\\nSONKRA ROAD,TARAORI-132116,\\n06AACCG7414K1ZL\\nPAN : AACCG7414K GST.NO.06AACCG7414K1ZL\\nEMAIL:-accounts@goelrice.net\\nFSSAI LICENSE NUMBER:-10813010000171\\nBILL OF SUPPLY\\nORIGINAL\\nDUPLICATE\\nTRIPLICATE\\nINVOICE No.\\nMS-3040\\nDATE\\n18/08/2026 Credit\\nBROKER\\nLAKHWINDER JI\\nPOLICY No. 261538502800\\nZurich Kotak General \\nInsurance\\nTRANSPORT GATEPASS No.\\nSRS CARGO \\nLOGISTICS INDIA \\nPRIVATE LIMITED\\nFROM\\nTARAORI , INDIA \\nTO\\nKOLKATA\\nTIME\\n07:13 PM\\nM/s\\nVINEET ENTERPRISES\\n67/45B, STRAND ROAD, POSTA, KOLKATA, WEST BENGAL, \\n700007\\nKOLKATA West Bengal\\nPIN NO :-700016\\nGSTN No. 19AANFV6721A1Z3\\nPhone No. 98300 92177\\nVEHICLE No.\\nHR58F-7781 Page 1 of 1 DRIVER\\nGRN No.\\n402600550\\n1 9\\nGST SALE \\nWITHOUT TAX\\nSr. ITEM NAME HSN Code Bags Weight RATE AMOUNT\\nRICE 10063012\\n301 SIZER SELLA 30 KGF\\n1 934 280.20 9,700.00 2,717,940.00\\nTOTAL 934 280.20 2,717,940.00\\nTOTAL GST 0.00\\nInsurance % 0.00 0.00\\nCommission % 0.00 0.00\\nTCS 0\\nFreight +/- 0.00\\nCONT. CXNU-2321103\\nSEAL NO. 010743\\nTOTAL BILL 2,717,940.00 in words\\nRupees Twenty Seven Lakh Seventeen Thousand Nine Hundred Fourty Only\\nfor GOEL INTERNATIONAL PVT.LTD.\\nAuthorised Signatory\\n\\\"I/We hereby certify that food/foods mentioned in this invoice is/are warranted to\\n be of the nature and quality which it/there purport to be\\\".\\nPLEASE MAKE PAYMENT THROUGH\\nPUNJAB NATIONAL BANK TARAORI\\nA\\\\C NO. 4041008700000299\\nIFSC CODE NO. PUNB0404100\"}"
+    },
+    {
+        "id": "case-066",
+        "input": "{\"timetoken\":17871224968310000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"301sizer basmati--40 bag\\n301sizer golden---60 bag\\nMedia_Content:\\n\"}"
+    },
+    {
+        "id": "case-067",
+        "input": "{\"timetoken\":17871225069090000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"26.2624394, 82.0710235\"}"
+    },
+    {
+        "id": "case-068",
+        "input": "{\"timetoken\":17871226573350000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Sultanpur galla mandi\"}"
+    },
+    {
+        "id": "case-069",
+        "input": "{\"timetoken\":17871229289010000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"## Body\\nEarlier With Solution\"}"
+    },
+    {
+        "id": "case-070",
+        "input": "{\"timetoken\":17871231841160000,\"channelName\":\"Sales Ashok Bro Ghaziabad\",\"user\":{\"phone\":\"919817983716\",\"name\":\"Shubham\"},\"channelId\":\"86f5869f-8ec0-480d-885f-4bc9a4376fb7\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"GOEL INTERNATIONAL PVT.LTD.\\nSONKRA ROAD,TARAORI-132116,\\n06AACCG7414K1ZL\\nPAN : AACCG7414K GST.NO.06AACCG7414K1ZL\\nEMAIL:-accounts@goelrice.net\\nFSSAI LICENSE NUMBER:-10813010000171\\nBILL OF SUPPLY\\nORIGINAL\\nDUPLICATE\\nTRIPLICATE\\nINVOICE No.\\nMS-3018\\nDATE\\n18/08/2026 Credit\\nBROKER\\nASHOK JI \\n(9313421235)\\nPOLICY No. 261538502800\\nZurich Kotak General \\nInsurance\\nTRANSPORT GATEPASS No.\\nGANGA TRANSPORT \\nCOMPANY\\nFROM\\nTARAORI , INDIA \\nTO\\nDELHI\\nTIME\\n01:31 PM\\nM/s\\nTUSHAR TRADING COMPANY-DELHI\\nGROUND FLOOR, PROP. NO-III/2252-53, HINGA BEG , \\nTILAK BAZAR, NEW DELHI, NORTH DELHI, DELHI, 110006\\nDELHI Delhi\\nPIN NO :-110006\\nGSTN No. 07AJFPG2737E1ZJ\\nPhone No. \\nVEHICLE No.\\nUP60AT-3170 Page 1 of 1 DRIVER\\nGRN No.\\n5478\\n0 7\\nGST SALE \\nWITHOUT TAX\\nSr. ITEM NAME HSN Code Bags Weight RATE AMOUNT\\nRICE 10063012\\nGALAXY GOLDEN RICE 30 KG\\n1 250 75.00 10,600.00 795,000.00\\n2 10063012 50 15.00 6,500.00 97,500.00\\nRICE 10063012\\nGALAXY GOLDEN RICE 30 KG\\n3 330 99.00 10,600.00 1,049,400.00\\n4 10063012 150 45.00 6,500.00 292,500.00\\nTOTAL 780 234.00 2,234,400.00\\nTOTAL GST 0.00\\nInsurance % 0.00 0.00\\nCommission % 0.00 0.00\\nTCS 0\\nFreight +/- 0.00\\nTOTAL BILL 2,234,400.00 in words\\nRupees Twenty Two Lakh Thirty Four Thousand Four Hundred Only\\nfor GOEL INTERNATIONAL PVT.LTD.\\nAuthorised Signatory\\n\\\"I/We hereby certify that food/foods mentioned in this invoice is/are warranted to\\n be of the nature and quality which it/there purport to be\\\".\\nPLEASE MAKE PAYMENT THROUGH\\nPUNJAB NATIONAL BANK TARAORI\\nA\\\\C NO. 4041008700000299\\nIFSC CODE NO. PUNB0404100\"}"
+    },
+    {
+        "id": "case-071",
+        "input": "{\"timetoken\":17871235945800000,\"channelName\":\"Sales Anup Broker\",\"user\":{\"phone\":\"919215915999\",\"name\":\"Anoop\"},\"channelId\":\"451c9d7b-0a20-4912-8159-9e93236e5216\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Nikrooz ka rate g\"}"
+    },
+    {
+        "id": "case-072",
+        "input": "{\"timetoken\":17871235995950000,\"channelName\":\"Sales Anup Broker\",\"user\":{\"phone\":\"919215915999\",\"name\":\"Anoop\"},\"channelId\":\"451c9d7b-0a20-4912-8159-9e93236e5216\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Shyama t co \\n100 bag galaxy golden 106\"}"
+    },
+    {
+        "id": "case-073",
+        "input": "{\"timetoken\":17871238032390000,\"channelName\":\"Sales Ashok Bro Ghaziabad\",\"user\":{\"phone\":\"919817983716\",\"name\":\"Shubham\"},\"channelId\":\"86f5869f-8ec0-480d-885f-4bc9a4376fb7\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"GOEL INTERNATIONAL PVT.LTD.\\nSONKRA ROAD,TARAORI-132116,\\n06AACCG7414K1ZL\\nPAN : AACCG7414K GST.NO.06AACCG7414K1ZL\\nEMAIL:-accounts@goelrice.net\\nFSSAI LICENSE NUMBER:-10813010000171\\nBILL OF SUPPLY\\nORIGINAL\\nDUPLICATE\\nTRIPLICATE\\nINVOICE No.\\nMS-3026\\nDATE\\n18/08/2026 Credit\\nBROKER\\nASHOK JI \\n(9313421235)\\nPOLICY No. 261538502800\\nZurich Kotak General \\nInsurance\\nTRANSPORT GATEPASS No.\\nDELHI KARNAL \\nROAD CARRIER\\nFROM\\nTARAORI , INDIA \\nTO\\nGHAZIABAD\\nTIME\\n06:07 PM\\nM/s\\nRAKESH KUMAR YASH KUMAR\\nC 59, KUBER NAVEEN MANDI STHAL GOVINDPURAM\\nGHAZIABAD Uttar Pradesh\\nPIN NO :-201001\\nGSTN No. 09AEOPA9635D1ZE\\nPhone No. 98110-46644\\nVEHICLE No.\\nHR55AC-2982 Page 1 of 1 DRIVER\\nGRN No.\\n7102\\n0 9\\nGST SALE \\nWITHOUT TAX\\nSr. ITEM NAME HSN Code Bags Weight RATE AMOUNT\\n1 10063012 50 15.00 10,190.47 152,857.05\\n2 10063012 50 15.00 10,190.47 152,857.05\\nTOTAL 100 30.00 305,714.10\\nTOTAL GST 15,285.7\\nInsurance % 0.00 0.00\\nCommission % 0.00 0.00\\nTCS 0\\nFreight +/- 0.00\\nTOTAL BILL 321,000.00 in words\\nRupees Three Lakh Twenty One Thousand Only\\nfor GOEL INTERNATIONAL PVT.LTD.\\nAuthorised Signatory\\n\\\"I/We hereby certify that food/foods mentioned in this invoice is/are warranted to\\n be of the nature and quality which it/there purport to be\\\".\\nPLEASE MAKE PAYMENT THROUGH\\nPUNJAB NATIONAL BANK TARAORI\\nA\\\\C NO. 4041008700000299\\nIFSC CODE NO. PUNB0404100\\nGOEL INTERNATIONAL PVT.LTD.\\nSONKRA ROAD,TARAORI-132116,\\n06AACCG7414K1ZL\\nPAN : AACCG7414K GST.NO.06AACCG7414K1ZL\\nEMAIL:-accounts@goelrice.net\\nFSSAI LICENSE NUMBER:-10813010000171\\nBILL OF SUPPLY\\nORIGINAL\\nDUPLICATE\\nTRIPLICATE\\nINVOICE No.\\nMS-3027\\nDATE\\n18/08/2026 Credit\\nBROKER\\nASHOK JI \\n(9313421235)\\nPOLICY No. 261538502800\\nZurich Kotak General \\nInsurance\\nTRANSPORT GATEPASS No.\\nDELHI KARNAL \\nROAD CARRIER\\nFROM\\nTARAORI , INDIA \\nTO\\nGHAZIABAD\\nTIME\\n06:11 PM\\nM/s\\nAGGARWAL TRADERS\\nNAVEEN MANDI.STHAL,GOVINDPURI\\nGHAZIABAD Uttar Pradesh\\nPIN NO :-201001\\nGSTN No. 09AGEPS6392K1ZN\\nPhone No. 98732-33100\\nVEHICLE No.\\nHR55AC-2982 Page 1 of 1 DRIVER\\nGRN No.\\n7103\\n0 9\\nGST SALE \\nWITHOUT TAX\\nSr. ITEM NAME HSN Code Bags Weight RATE AMOUNT\\n1 RICE 10063012 50 15.00 3,200.00 48,000.00\\n2 RICE 10063012 100 30.00 3,600.00 108,000.00\\nTOTAL 150 45.00 156,000.00\\nTOTAL GST 0.00\\nInsurance % 0.00 0.00\\nCommission % 0.00 0.00\\nTCS 0\\nFreight +/- 0.00\\nTOTAL BILL 156,000.00 in words\\nRupees One Lakh Fifty Six Thousand Only\\nfor GOEL INTERNATIONAL PVT.LTD.\\nAuthorised Signatory\\n\\\"I/We hereby certify that food/foods mentioned in this invoice is/are warranted to\\n be of the nature and quality which it/there purport to be\\\".\\nPLEASE MAKE PAYMENT THROUGH\\nPUNJAB NATIONAL BANK TARAORI\\nA\\\\C NO. 4041008700000299\\nIFSC CODE NO. PUNB0404100\\nGOEL INTERNATIONAL PVT.LTD.\\nSONKRA ROAD,TARAORI-132116,\\n06AACCG7414K1ZL\\nPAN : AACCG7414K GST.NO.06AACCG7414K1ZL\\nEMAIL:-accounts@goelrice.net\\nFSSAI LICENSE NUMBER:-10813010000171\\nBILL OF SUPPLY\\nORIGINAL\\nDUPLICATE\\nTRIPLICATE\\nINVOICE No.\\nMS-3028\\nDATE\\n18/08/2026 Credit\\nBROKER\\nASHOK JI \\n(9313421235)\\nPOLICY No. 261538502800\\nZurich Kotak General \\nInsurance\\nTRANSPORT GATEPASS No.\\nDELHI KARNAL \\nROAD CARRIER\\nFROM\\nTARAORI , INDIA \\nTO\\nDELHI\\nTIME\\n06:15 PM\\nM/s\\nTUSHAR TRADING COMPANY-DELHI\\nGROUND FLOOR, PROP. NO-III/2252-53, HINGA BEG , \\nTILAK BAZAR, NEW DELHI, NORTH DELHI, DELHI, 110006\\nDELHI Delhi\\nPIN NO :-110006\\nGSTN No. 07AJFPG2737E1ZJ\\nPhone No. \\nVEHICLE No.\\nHR55AC-2982 Page 1 of 1 DRIVER\\nGRN No.\\n7104\\n0 7\\nGST SALE \\nWITHOUT TAX\\nSr. ITEM NAME HSN Code Bags Weight RATE AMOUNT\\nRICE 10063012\\nGALAXY GOLDEN RICE 30 KG\\n1 750 225.00 10,600.00 2,385,000.00\\nTOTAL 750 225.00 2,385,000.00\\nTOTAL GST 0.00\\nInsurance % 0.00 0.00\\nCommission % 0.00 0.00\\nTCS 0\\nFreight +/- 0.00\\nTOTAL BILL 2,385,000.00 in words\\nRupees Twenty Three Lakh Eighty Five Thousand Only\\nfor GOEL INTERNATIONAL PVT.LTD.\\nAuthorised Signatory\\n\\\"I/We hereby certify that food/foods mentioned in this invoice is/are warranted to\\n be of the nature and quality which it/there purport to be\\\".\\nPLEASE MAKE PAYMENT THROUGH\\nPUNJAB NATIONAL BANK TARAORI\\nA\\\\C NO. 4041008700000299\\nIFSC CODE NO. PUNB0404100\"}"
+    },
+    {
+        "id": "case-074",
+        "input": "{\"timetoken\":17871249947740000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Kilashi traders\\nMedia_Content:\\n## Header\\nडॉ. अमरेश सिंह सिंहजी के पावती ॥\\n\\n## Body\\nडॉ. अमरेश सिंह सिंहजी के पावती ॥\\n\\nडॉ. अमरेश सिंह सिंहजी के पावती ॥\\n\\nडॉ. अमरेश सिंह सिंहजी के पावती ॥\\n\\nडॉ. अमरेश सिंह सिंहजी के पावती ॥\\n\\nडॉ. अमरेश सिंह सिंहजी के पावती ॥\\n\\nडॉ. अमरेश सिंह सिंहजी के पावती ॥\\n\\nडॉ. अमरेश सिंह सिंहजी के पावती ॥\\n\\nडॉ. अमरेश सिंह सिंहजी के पावती ॥\\n\\nडॉ. अमरेश सिंह सिंहजी के पावती ॥\\n\\nडॉ. अमरेश सिंह सिंहजी के पावती ॥\\n\\nडॉ. अमरेश सिंह सिंहजी के पावती ॥\"}"
+    },
+    {
+        "id": "case-075",
+        "input": "{\"timetoken\":17871257159910000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"## Header\\nजय श्री श्याम\\nJAISWAL TRADER'S\\n\\n9839651065\\n\\n## Body\\nजय श्री श्याम\\n\\n\\nSPORTO\\n\\n## Footer\\nSANDEEP TRADER'S\"}"
+    },
+    {
+        "id": "case-076",
+        "input": "{\"timetoken\":17871270246940000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Sandeep traders \\n301sizer golden---40 bags\\nMedia_Content:\\n## Body\\nश्री गणेश जी सदा सहाय ।\\nश्री लक्ष्मी जी सदा सहाय ।\\nश्री कुंवर जी सदा सहाय ।\\nश्री दुर्गा जी सदा सहाय ।\\nश्री हनुमान जी सदा सहाय ।\\n\\n|  ८ | १ | ८  |\\n| --- | --- | --- |\\n|  ३ | ५ | ७  |\\n|  ४ | ८ | २  |\\n\"}"
+    },
+    {
+        "id": "case-077",
+        "input": "{\"timetoken\":17871289944910000,\"channelName\":\"Ankur Roy broker bihar\",\"user\":{\"phone\":\"918621000091\",\"name\":\"Arpit Goel\"},\"channelId\":\"589a044e-3555-4d23-94a9-3e2d9ee7d317\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Ese m loading le leta hu sir\\n\\nAur market update kr dete hai sir\\n\\nWhite sella 1121 100\\n\\nRegular 68\\nSilverline 67\\nTibar 55\\nDubar 45\\n\\nAndaz xxxl 94\\nGulab 104\\nGolden wand 104\\nSupreme xxxl 104\"}"
+    },
+    {
+        "id": "case-078",
+        "input": "{\"timetoken\":17871290154570000,\"channelName\":\"Ankur Roy broker bihar\",\"user\":{\"phone\":\"918621000091\",\"name\":\"Arpit Goel\"},\"channelId\":\"589a044e-3555-4d23-94a9-3e2d9ee7d317\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"10kg ₹2 extra tax paid\"}"
+    },
+    {
+        "id": "case-079",
+        "input": "{\"timetoken\":17871292348050000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Sanjay kirana\\nMedia_Content:\\n## Header\\nJ. R. R. R. R.\"}"
+    },
+    {
+        "id": "case-080",
+        "input": "{\"timetoken\":17871293686940000,\"channelName\":\"Ankur Roy broker bihar\",\"user\":{\"phone\":\"918368942273\",\"name\":\"~Ankur Rai\"},\"channelId\":\"589a044e-3555-4d23-94a9-3e2d9ee7d317\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Okk sir\"}"
+    },
+    {
+        "id": "case-081",
+        "input": "{\"timetoken\":17871296790910000,\"channelName\":\"Ankur Roy broker bihar\",\"user\":{\"phone\":\"918621000091\",\"name\":\"Arpit Goel\"},\"channelId\":\"589a044e-3555-4d23-94a9-3e2d9ee7d317\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Fancy kirana \\nShubh laxmi \\nVinayak store \\ninko bhi bolo\"}"
+    },
+    {
+        "id": "case-082",
+        "input": "{\"timetoken\":17871296991010000,\"channelName\":\"Ankur Roy broker bihar\",\"user\":{\"phone\":\"918621000091\",\"name\":\"Arpit Goel\"},\"channelId\":\"589a044e-3555-4d23-94a9-3e2d9ee7d317\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Kp wale ko boldena 15 din hogye h\"}"
+    },
+    {
+        "id": "case-083",
+        "input": "{\"timetoken\":17871297041070000,\"channelName\":\"Ankur Roy broker bihar\",\"user\":{\"phone\":\"918368942273\",\"name\":\"~Ankur Rai\"},\"channelId\":\"589a044e-3555-4d23-94a9-3e2d9ee7d317\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Sir bol dia hai \\nKehra hai tha parso lg jayega apka payment \\nPayment collection bhaut slow ho gayi hai bikri bhaut kamjor ho gayi hai\"}"
+    },
+    {
+        "id": "case-084",
+        "input": "{\"timetoken\":17871297174460000,\"channelName\":\"Ankur Roy broker bihar\",\"user\":{\"phone\":\"918368942273\",\"name\":\"~Ankur Rai\"},\"channelId\":\"589a044e-3555-4d23-94a9-3e2d9ee7d317\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Kp wale ki aaj payment lgwa deta hu sir\"}"
+    },
+    {
+        "id": "case-085",
+        "input": "{\"timetoken\":17871297693640000,\"channelName\":\"Ankur Roy broker bihar\",\"user\":{\"phone\":\"918368942273\",\"name\":\"~Ankur Rai\"},\"channelId\":\"589a044e-3555-4d23-94a9-3e2d9ee7d317\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Karwata hu sir sabko bol k\"}"
+    },
+    {
+        "id": "case-086",
+        "input": "{\"timetoken\":17871315126120000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"## Header\\nDAN\\n\\n## Body\\nREPORT\"}"
+    },
+    {
+        "id": "case-087",
+        "input": "{\"timetoken\":17871316275570000,\"channelName\":\"Ankur Roy broker bihar\",\"user\":{\"phone\":\"918621000091\",\"name\":\"Arpit Goel\"},\"channelId\":\"589a044e-3555-4d23-94a9-3e2d9ee7d317\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Pankaj bhandar wale se baat kro aise kaam kaise hoga\"}"
+    },
+    {
+        "id": "case-088",
+        "input": "{\"timetoken\":17871342872490000,\"channelName\":\"Sales Adish Broker\",\"user\":{\"phone\":\"919811084786\",\"name\":\"A\"},\"channelId\":\"c0710d25-6ec1-4eee-8a29-328830886707\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"500k galaxy goldan sala chawla traders bhopal\"}"
+    },
+    {
+        "id": "case-089",
+        "input": "{\"timetoken\":17871343123490000,\"channelName\":\"Sales Adish Broker\",\"user\":{\"phone\":\"919811084786\",\"name\":\"A\"},\"channelId\":\"c0710d25-6ec1-4eee-8a29-328830886707\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Rate 10600/\"}"
+    },
+    {
+        "id": "case-090",
+        "input": "{\"timetoken\":17871353183900000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"## Header\\nNet WE 30 Kg TRADITIONAL TASTE\\nSuper Quality Mfg.:\\n\\n## Body\\nM.G. AGRO FOOD PRODUCTS\\nKhara, Bikaner\\n\\n## Footer\\nCustomer 94141 43593 / 93512 6\"}"
+    },
+    {
+        "id": "case-091",
+        "input": "{\"timetoken\":17871360850470000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"## Header\\nसैदल बहिष्कृत\\nती सब बहिष्कृत\\nFortune\\n\\n## Body\\nVISHIVA\\nNATH AND\\nSONS\\n\\n## Footer\\nM. 8003190109\"}"
+    },
+    {
+        "id": "case-092",
+        "input": "{\"timetoken\":17871374978090000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"## Body\\nDhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru Dhuhru\"}"
+    },
+    {
+        "id": "case-093",
+        "input": "{\"timetoken\":17871389206080000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"500k galaxy goldan sala chawla traders bhopal\"}"
+    },
+    {
+        "id": "case-094",
+        "input": "{\"timetoken\":17871389208750000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Rate 10600/\"}"
+    },
+    {
+        "id": "case-095",
+        "input": "{\"timetoken\":17871389216490000,\"channelName\":\"Order Sales\",\"user\":{\"phone\":\"919215738244\",\"name\":\"Harshit\"},\"channelId\":\"b40e7b57-32e2-4ee5-b508-0b5c587d3703\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"Adish\"}"
+    },
+    {
+        "id": "case-096",
+        "input": "{\"timetoken\":17871393902960000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"## Header\\nPREMIUM QUART\"}"
+    },
+    {
+        "id": "case-097",
+        "input": "{\"timetoken\":17871404211850000,\"channelName\":\"Ajay Shukla Sales\",\"user\":{\"phone\":\"919935605886\",\"name\":\"Ajay Shukla\"},\"channelId\":\"6f300129-3396-4740-9939-9f10b4b783a3\",\"workspaceId\":\"33b221b5-199c-427d-83fa-684e2985d616\",\"messageContent\":\"## Header\\nGST.NO-09EBOPA2625E1ZU\\nMOB:9794949063,7237840506\\nश्री गणेशाय: नमः\\n\\nश्री माता दी\\n\\n# श्री महलक्ष्मी ट्रेडर्स\\n\\nबाल, चावल, गेहूँ, चना, बाजड़ा, मक्का\\nआदि के शोक एवं फुटकर विक्रेता ।\\n\\nप्रथम गल्लामण्डी-सुलतानपुर\\n\\nप्रो.-लालबाब\"}"
     }
-  }
 ]
