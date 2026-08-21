@@ -224,11 +224,11 @@ async def optimize(request: OptimizeRequest):
     # -----------------------------------------
 
     async def stream():
-        print(
-            "[SSE] Stream started",
-            flush=True,
-        )
-
+        # No print() calls in here: redirect_stdout() in run() swaps sys.stdout
+        # for the whole process (not just the optimizer thread), so any print
+        # on this thread while that redirect is active would get captured into
+        # output_queue itself, re-sent, re-captured, etc. - an infinite feedback
+        # loop that floods the stream and scrambles ordering.
         while True:
             try:
                 message = output_queue.get_nowait()
@@ -238,27 +238,13 @@ async def optimize(request: OptimizeRequest):
                 continue
 
             if message is None:
-                print(
-                    "Received termination signal",
-                    flush=True,
-                )
                 break
 
             for line in message.splitlines():
                 if not line:
                     continue
 
-                print(
-                    f"{line[:150]}",
-                    flush=True,
-                )
-
                 yield f"data: {line}\n\n"
-
-        print(
-            "Stream completed",
-            flush=True,
-        )
 
     return StreamingResponse(
         stream(),

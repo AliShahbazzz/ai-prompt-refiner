@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from "react";
-import { DUMMY_DATASET, DUMMY_LOGS, DUMMY_PROMPT, DUMMY_PURPOSE } from "./defaults";
+import { DUMMY_DATASET, DUMMY_PROMPT, DUMMY_PURPOSE } from "./defaults";
 
 interface CopyButtonProps {
   value: string;
@@ -28,9 +28,7 @@ function CopyButton({ value }: CopyButtonProps) {
 interface OptimizeDatasetItem {
   id: string;
   input: string;
-  expected: {
-    requirements: string[];
-  };
+  expected?: Record<any, any>;
 }
 
 interface OptimizeRequest {
@@ -48,7 +46,13 @@ interface FieldProps {
   className?: string;
 }
 
-function Field({ label, description, children, value, className = "" }: FieldProps) {
+function Field({
+  label,
+  description,
+  children,
+  value,
+  className = "",
+}: FieldProps) {
   return (
     <div className={`field ${className}`.trim()}>
       <div className="field-header">
@@ -63,16 +67,13 @@ function Field({ label, description, children, value, className = "" }: FieldPro
   );
 }
 
-
 export default function App() {
   const [purpose, setPurpose] = useState(DUMMY_PURPOSE);
   const [initialPrompt, setInitialPrompt] = useState(DUMMY_PROMPT);
   const [dataset, setDataset] = useState(DUMMY_DATASET);
-  const [optimisedPrompt, setOptimisedPrompt] = useState(
-    "You are an expert customer support triage assistant.\n\nRead the ticket below and classify it into exactly one category: billing, technical, account, or general.\n\nRules:\n- billing: payments, charges, invoices, refunds\n- technical: bugs, crashes, errors, performance\n- account: login, password, profile, access\n- general: anything that doesn't clearly fit the above\n\nRespond with only the category name in lowercase.\n\nTicket: {{input}}",
-  );
+  const [optimisedPrompt, setOptimisedPrompt] = useState("");
   const [target, setTarget] = useState("gpt-5.4-mini");
-  const [logs, setLogs] = useState(DUMMY_LOGS);
+  const [logs, setLogs] = useState("");
   const [isOptimizing, setIsOptimizing] = useState(false);
 
   const canOptimize =
@@ -81,15 +82,22 @@ export default function App() {
     dataset.trim() !== "" &&
     target.trim() !== "";
 
+  const MAX_LOG_LINES = 500;
+
   const appendLog = (line: string) => {
     const timestamp = new Date().toLocaleTimeString();
-    setLogs((prev) => `${prev}\n[${timestamp}] ${line}`);
+    setLogs((prev) => {
+      const next = `[${timestamp}] ${line}\n${prev}`;
+      const lines = next.split("\n");
+      if (lines.length <= MAX_LOG_LINES) return next;
+      return lines.slice(0, MAX_LOG_LINES).join("\n");
+    });
   };
 
   const handleOptimize = async () => {
     let parsedDataset: OptimizeDatasetItem[];
     try {
-      parsedDataset = JSON.parse(dataset);
+      parsedDataset = JSON.parse(JSON.stringify(dataset));
     } catch (err) {
       appendLog(`Failed to parse dataset JSON: ${(err as Error).message}`);
       return;
@@ -254,7 +262,12 @@ export default function App() {
             value={logs}
             className="field"
           >
-            <textarea className="fill mono" value={logs} rows={12} readOnly />
+            <textarea
+              className="fill mono"
+              value={logs}
+              rows={12}
+              readOnly
+            />
           </Field>
         </div>
       </div>

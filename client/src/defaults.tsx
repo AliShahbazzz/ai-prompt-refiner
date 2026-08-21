@@ -1,12 +1,3 @@
-export const DUMMY_LOGS = `[10:02:14] Loaded dataset (4 examples)
-[10:02:15] Running initial prompt against dataset...
-[10:02:18] Accuracy: 0.75 (3/4 correct)
-[10:02:18] Reflecting on failure cases...
-[10:02:21] Generated optimised prompt
-[10:02:24] Running optimised prompt against dataset...
-[10:02:26] Accuracy: 1.00 (4/4 correct)
-[10:02:26] Optimisation complete`;
-
 export const DUMMY_PURPOSE = `Convert unstructured WhatsApp conversations 
     containing dispatch and delivery updates into accurate, 
     complete, and traceable structured dispatch records 
