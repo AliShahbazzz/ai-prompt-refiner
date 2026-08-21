@@ -102,7 +102,7 @@ def run_optimization(target: str):
     metadata = {
         "best_score": best_score,
         "total_evals": result.total_metric_calls,
-        "initial_prompt": prompt,
+        "initial_prompt": initial_prompt,
         "optimized_prompt": result.best_candidate,
     }
 
@@ -122,6 +122,8 @@ def run_optimization(target: str):
     print(f"Saved prompt: {best_prompt_path}")
 
     print(f"Saved metadata: {metadata_path}")
+
+    return result.best_candidate
 
 
 if __name__ == "__main__":
